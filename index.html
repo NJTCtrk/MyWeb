@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bigbox{
+            width: 500px;
+            height: 500px;
+            background-color: aquamarine;
+            /*将容器定义为弹性容器*/
+            display: flex;
+
+            /*元素排列方式
+            row从左横向排列
+            row-reverse从右横向排列
+            column从上竖向排列
+            column-reverse从下竖向排列*/
+            flex-direction: row;
+
+            /*元素的垂直位置
+            flex-start最上方
+            center居中
+            flex-end最下方*/
+            justify-content: center;
+            /*元素的水平位置
+            属性同上*/
+            align-items: center;
+        }
+        .box1,.box2,.box3{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: red;
+            flex: 3;
+        }
+        .box2{
+            background-color: green;
+            flex: 2;
+        }
+        .box3{
+            background-color: blue;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
